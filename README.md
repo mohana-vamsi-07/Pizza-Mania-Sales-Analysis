@@ -101,20 +101,46 @@ This project uses four CSV files:
 
 ---
 
-## 📊 Analysis Questions (Basic → Advanced)
+## 📊 Analysis Questions
 
-- 📌 Total number of orders?
-- 💰 Total revenue generated?
-- 🥇 Most popular pizza by sales?
-- 🍽️ Pizza category with highest revenue?
-- ⏰ Peak order times by hour/day?
-- 📆 Monthly/weekly sales trends?
-- 💡 Impact of size on revenue?
-- 🔥 Best-performing pizza by category?
-- 👥 Average number of pizzas per order?
-- 🧠 What-if analysis: increase price of top 3 by 10%
+### 🟢 Basic Level
+- How many total orders were placed?
+- How many unique pizzas are available?
+- What are the different pizza categories?
+- What are the available pizza sizes?
+- What is the total quantity of pizzas sold?
+- What is the total revenue generated?
+- Which pizza size is most ordered?
+- What is the most popular pizza by number of orders?
+- Which pizza category sells the most?
+- What is the average number of pizzas per order?
 
-### 🧠 Performance/Industry Practices
+### 🟡 Medium Level
+- Which day of the week has the highest number of orders?
+- What is the hourly distribution of orders (busiest time of day)?
+- What is the average revenue per order?
+- Which size generates the most revenue?
+- What is the monthly sales trend across the year?
+- What is the revenue per pizza category?
+- What is the average quantity ordered per pizza type?
+- Which pizza has the highest price per size?
+- What is the distribution of orders by pizza category over time?
+- Top 5 pizzas contributing to revenue?
+
+### 🔴 Advanced Level
+- What-if analysis: How will a 10% price increase affect revenue for the top 3 pizzas?
+- Which pizza generates the most revenue per order frequency (revenue/order count)?
+- What is the conversion rate of different pizza categories per month?
+- Which combination of size and category yields the highest average revenue?
+- Build a report of revenue growth trends quarterly and yearly.
+- Identify anomalies or dips in revenue (potential supply issues).
+- Create a customer segmentation profile based on time and order size (requires customer data).
+- Which pizzas are frequently ordered together (market basket analysis)?
+- Forecast sales for the next quarter based on time series (exported to external tools like Power BI or Python).
+
+---
+
+## 🧠 Performance/Industry Practices
 - Use **indexes** on foreign keys (`order_id`, `pizza_id`)
 - Optimize with **GROUP BY**, **JOIN**, and **CTEs**
 - Use **views** for frequent dashboards
@@ -149,4 +175,3 @@ MIT License
 
 ## 🧑‍💻 Author
 Built by Dharanikota Mohana Vamsi 🚀
-
